@@ -4,7 +4,7 @@ Son güncelleme: 12 Kasım 2026 · Europe/Istanbul
 
 ## Mevcut durum
 
-Gümüş ve pembe yansımalı tasarım React ve TypeScript uygulamasına aktarıldı. CV içerikleri yerleştirildi; numaralı menü, bölüm bağlantıları, yatay kaydırma ve akışkan arka plan çalışıyor. Üç birim testi ve masaüstü/mobil boyutlarında 16 tarayıcı kontrolü geçti. Özel erişimli site yayımlandı ve canlı adreste üç ekran genişliğinde doğrulandı. Son kullanıcı tasarım ve içerik değerlendirmesi açık.
+Gümüş ve pembe yansımalı tasarım React ve TypeScript uygulamasına aktarıldı. CV içerikleri yerleştirildi; numaralı menü, bölüm bağlantıları, yatay kaydırma ve akışkan arka plan çalışıyor. Üç birim testi ve masaüstü/mobil boyutlarında 16 tarayıcı kontrolü geçti. Özel erişimli site yayımlandı ve canlı adreste üç ekran genişliğinde doğrulandı. Kullanıcı düzenlemek istediği alanlar olduğunu bildirdi; revizyon ayrıntıları bekleniyor. Tasarım ve içerik değerlendirmesi açık.
 
 Canlı site: [Sıla Çakmak portfolyo](https://sila-cakmak-portfolio.burayrailway.chatgpt.site). Erişim özel; ziyaret için site sahibinin hesabıyla oturum gerekebilir.
 
@@ -109,23 +109,28 @@ Bir iş yalnızca kendi kabul ölçütü karşılanıp doğrulama kaydı eklendi
 | 12 Kasım 2026 | Canlı kontroller | 1440×1000, 390×844 ve 320×740 Chrome; her boyutta beş bölüm, ortalı menü, taşma ve geri gezinme. | 15 bölüm kontrolü geçti; 0 çalışma zamanı hatası. `output/live-verification.json` ve `output/live-*.png`. |
 | 12 Kasım 2026 | Çizim ölçümü | Her boyutta 30 gerçek WebGL çizim çağrısı; başlatma sonrası örneklem. | Ortalama / p95 aralıkları: masaüstü 16,5 / 17,6 ms; mobil 32,8 / 33,6 ms; 320 px 33,2 / 33,5 ms. Yerel Mac Chrome, mobil emülasyon; fiziksel telefon ölçümü değildir. |
 
-## Açık kontroller
+| 12 Kasım 2026 | Güncel yayın | İkinci sürüm; commit `7d49dea0ed3b5275327287934b735e1ee10b2bfc`, dağıtım `appgdep_6af5b78aef5881918e1fbf54d7f758e2`. | Sites başarılı yayın sonucu; özel erişim korundu. Makale bağlantısı ve içeriğe geç bağlantısının düzeltmesi dahil. |
+| 12 Kasım 2026 | İkinci sürüm canlı doğrulama | 1440×1000, 390×844, 320×740; beş bölüm, geri gezinme, menü hizası, makale adresi, Türkçe font yükleme ve font engelleme. | Tümü geçti; 0 çalışma zamanı hatası. Ortalama / p95: 16,6 / 18,7 ms; 32,6 / 33,6 ms; 32,9 / 33,6 ms. Kanıt `output/live-verification.json`; önceki canlı ölçüm kaydından ayrıdır. |
 
-| Konu | Yapılacak kontrol |
+## Kontrol durumu
+
+| Konu | Kanıt veya kalan kontrol |
 | --- | --- |
 | Parlak yansımalar üzerinde okunabilirlik | Hareket boyunca başlık, açıklama ve numaralar okunabilir kalmalı. |
-| Mobil grafik yükü | Efekt çözünürlüğü ve yoğunluğu cihaz performansına göre ayarlanmalı. |
-| Uzun CV içerikleri | İçerik büyüdüğünde menü ve metinler çakışmamalı; dikey okuma mümkün olmalı. |
-| Kaydırma hareketleri | Yatay bölüm geçişi, tarayıcı hareketleri ve dikey sayfa kaydırması birlikte denenmeli. |
-| Hareket hassasiyeti | Hareket azaltma tercihinde dalgalar ve geçişler sadeleşmeli. |
-| WebGL desteği | Efekt başlatılamadığında HTML içerik ve gezinme kullanılabilir kalmalı. |
-| Font yükleme | Türkçe karakterler ve font yüklenmeden önceki görünüm kontrol edilmeli. |
+| Mobil grafik yükü | Hafif mod mobilde başlangıç tercihi; üç boyutta çizim ölçüldü. Fiziksel telefon değerlendirmesi ek kontrol. |
+| Uzun CV içerikleri | Beş bölümde taşma ve menü hizası; Deneyim bölümünde yerel dikey kaydırma tarayıcı testleriyle doğrulandı. |
+| Kaydırma hareketleri | Yatay tekerlek, gerçek dokunma olayları, dikey kaydırma ve geri–ileri testleri geçti; fiziksel cihaz tarayıcı hareketleri ek kontrol. |
+| Hareket hassasiyeti | Hareket azaltma ve kullanılabilir gezinme tarayıcı testlerinde geçti. |
+| WebGL desteği | WebGL bağlamı engellenerek alternatif görünüm, içerik ve gezinme doğrulandı. |
+| Font yükleme | Canlı ikinci sürümde Türkçe karakter örnekleriyle Bodoni Moda ve Inter yüklendi. Font istekleri engellendiğinde Projeler menüsü çalıştı ve yatay taşma oluşmadı; üç ekran boyutu kontrol edildi. |
 | Tam ekran | Tarayıcı izinleriyle denenmeli; sohbet önizlemesindeki kısıtlar canlı siteyle aynı kabul edilmemeli. |
 
 ## Sıradaki çalışma
 
-1. Son tasarım ve içerikleri kullanıcıyla değerlendirmek — TAS-03, IC-02.
-2. Makale bağlantısı ve gerçek proje görsellerini eklemek — IC-01.
+Kullanıcının belirttiği ilk metin revizyonu uygulandı: İletişim bölümünün kapanış imzası “Sıla.” yerine “Sıla Çakmak” olarak değiştirildi. Bu düzeltme, diğer tasarım veya içerik maddeleri için genel onay sayılmaz.
+
+1. Kullanıcının istediği revizyonların ayrıntılarını alıp uygulamak — TAS-03, IC-02. Onay verilmedi; düzenlenecek alanların açıklaması istendi.
+2. Gerçek proje görsellerini temin edip eklemek — IC-01. Makale bağlantısı eklendi ve canlıda doğrulandı.
 3. Ek doğrulama: kullanıcının fiziksel telefonunda gezinme ve akıcılığı değerlendirmek.
 
 Kullanıcı değerlendirmesi yapılmadan TAS-03 ve IC-02 tamamlandı olarak işaretlenmeyecek. Fiziksel telefon kontrolü, tamamlanan emülasyon kontrollerinden ayrı tutulacak.
@@ -147,3 +152,6 @@ Kullanıcı değerlendirmesi yapılmadan TAS-03 ve IC-02 tamamlandı olarak işa
 | 12 Kasım 2026 | Uygulama kuruldu; CV aktarıldı; gerçek proje depoları eklendi; testler kaydedildi. | Audit tamamlama hedefi doğrultusunda kalıcı uygulamaya geçiş. |
 | 12 Kasım 2026 | Grafik kodu gecikmeli yüklenir; React StrictMode yeniden başlatmasında GPU bağlamının gereksiz kaybı düzeltildi. | İlk yükü azaltmak ve akışkan yüzeyin güvenilir başlamasını sağlamak. |
 | 12 Kasım 2026 | Özel erişimli yayın ve canlı kontroller tamamlandı. | Uygulamanın yerel ortam dışında da çalıştığını doğrulamak. |
+
+| 12 Kasım 2026 | Makale bağlantısı ve ikinci özel yayın eklendi; canlı font ve bağlantı kontrolleri yapıldı. | Yeni kaynak bilgisini doğrulamak ve audit kayıtlarını yayınla eşleştirmek. |
+| 12 Kasım 2026 | Kullanıcı tasarımda düzenlemek istediği alanlar olduğunu belirtti; revizyon ayrıntıları istendi. | Son değerlendirme tamamlanmadığından TAS-03 ve IC-02 açık kalır. |

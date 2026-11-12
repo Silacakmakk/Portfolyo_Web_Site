@@ -27,7 +27,7 @@ export function SectionContent({ index }: { index: number }) {
     <span className={styles.kicker}>BİRLİKTE DÜŞÜNELİM.</span><a className={styles.email} href={`mailto:${profile.email}`}>{profile.email}<span aria-hidden="true">↗</span></a>
     <p>Veri analizi, makine öğrenmesi ve yazılım geliştirme alanlarında bir sohbetle başlayabiliriz.</p>
     <div className={styles.socials}>{profile.links.map(link => <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer">{link.label}<span aria-hidden="true">↗</span></a>)}</div>
-    <p className={styles.signoff}>Tanışmak dileğiyle,<br /><em>Sıla.</em></p>
+    <p className={styles.signoff}>Tanışmak dileğiyle,<br /><em>Sıla Çakmak</em></p>
   </div>
 }
 
