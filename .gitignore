@@ -134,3 +134,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Local verification and hosting helpers
+.sites-runtime/
+test-results/
+playwright-report/
+output/
+.DS_Store
