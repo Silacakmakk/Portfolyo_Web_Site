@@ -36,7 +36,7 @@ function Projects() {
   return <div className={styles.projects}>
     {projects.map((project, index) => <details key={project.id} className={styles.project}>
       <summary><span className={`${styles.art} ${styles[project.art]}`} aria-hidden="true"><span>0{index + 1}</span></span><span className={styles.projectSummary}><small>{project.category}</small><h2>{project.short}</h2></span><span className={styles.expand} aria-hidden="true">+</span></summary>
-      <div className={styles.projectBody}><h3>{project.title}</h3><p>{project.description}</p><p>{project.detail}</p><div className={styles.tags}>{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>{project.url && <a className="text-link" href={project.url} target="_blank" rel="noopener noreferrer">Proje deposunu incele <span aria-hidden="true">↗</span></a>}</div>
+      <div className={styles.projectBody}><h3>{project.title}</h3><p>{project.description}</p><p>{project.detail}</p><div className={styles.tags}>{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div>{project.url && <a className="text-link" href={project.url} target="_blank" rel="noopener noreferrer">{project.id === 'oyun-bagimliligi' ? 'Makaleyi oku' : 'Proje deposunu incele'} <span aria-hidden="true">↗</span></a>}</div>
     </details>)}
     <a className="text-link" href={profile.links[1].url} target="_blank" rel="noopener noreferrer">GitHub profilimi incele <span aria-hidden="true">↗</span></a>
     <button className={styles.sourceButton} onClick={() => dialog.current?.showModal()}>Çalışmalar hakkında</button>

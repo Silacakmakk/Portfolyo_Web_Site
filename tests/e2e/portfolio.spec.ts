@@ -9,6 +9,7 @@ test('numbered navigation, shared links and history stay in sync', async ({ page
   await expect(page).toHaveURL(/#projeler$/)
   await page.getByText('Oyun bağımlılığı risk sınıflandırması', { exact: true }).click()
   await expect(page.getByText(/MLP modeliyle %92,5/)).toBeVisible()
+  await expect(page.getByRole('link', { name: 'Makaleyi oku' })).toHaveAttribute('href', 'https://dergipark.org.tr/en/pub/jsrc/article/1940012')
   await page.goBack()
   await expect(page.getByRole('button', { name: '3 · Eğitim', exact: true })).toHaveAttribute('aria-current', 'page')
   await page.goForward()
@@ -80,6 +81,15 @@ test('project dialog is keyboard accessible and escape returns control', async (
   await expect(page.getByRole('dialog')).toBeVisible()
   await page.keyboard.press('Escape')
   await expect(page.getByRole('dialog')).not.toBeVisible()
+})
+
+test('skip link focuses the content without changing the selected section', async ({ page }) => {
+  await page.goto('/#projeler')
+  await page.keyboard.press('Tab')
+  await expect(page.getByRole('link', { name: 'İçeriğe geç', exact: true })).toBeFocused()
+  await page.keyboard.press('Enter')
+  await expect(page.locator('main')).toBeFocused()
+  await expect(page).toHaveURL(/#projeler$/)
 })
 
 test('liquid surface renders without shader errors and produces review screenshots', async ({ page }, testInfo) => {

@@ -23,12 +23,12 @@ export function App() {
   function toggleDim() { const value = !dim; setDim(value); try { localStorage.setItem('portfolio-dim', String(value)) } catch { /* Preferences are optional. */ } }
   return <div ref={root} className={styles.app} data-section={current.id}>
     <Suspense fallback={null}><LiquidSurface motion={motion} quality={quality} reducedMotion={reducedMotion} dim={dim} /></Suspense>
-    <a className="skip-link" href="#icerik">İçeriğe geç</a>
+    <a className="skip-link" href="#icerik" onClick={event => { event.preventDefault(); content.current?.focus() }}>İçeriğe geç</a>
     <header className={styles.header}>
       <a className={styles.brand} href="#hakkimda" onClick={e => { e.preventDefault(); navigate(0) }}><span>SILA ÇAKMAK</span><small>{profile.role}</small></a>
       <div className={styles.headerRight}><span className={styles.headerNote}>MERAKLA ŞEKİLLENEN<br />BİR YOLCULUK.</span><button className={styles.hello} onClick={() => navigate(4)}>Bir merhaba <span aria-hidden="true">↗</span></button></div>
     </header>
-    <main id="icerik" ref={content} className={styles.main} aria-busy={state.transitioning}>
+    <main id="icerik" ref={content} tabIndex={-1} className={styles.main} aria-busy={state.transitioning}>
       <div className={styles.introduction}>
         <span className={styles.eyebrow}>0{state.displayed + 1} / {current.label.toLocaleUpperCase('tr-TR')}</span>
         <h1 id={current.id}>{current.title[0]}<br /><em>{current.title[1]}</em></h1>

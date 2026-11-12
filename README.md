@@ -2,6 +2,8 @@
 
 Gümüş ve pembe yansımalı akışkan yüzey; beş bölümlü, yatay gezilebilir kişisel portfolyo.
 
+[Özel erişimli canlı site](https://sila-cakmak-portfolio.burayrailway.chatgpt.site)
+
 ## Geliştirme
 
 Node.js 22.12 veya üzeri ile:
@@ -18,7 +20,7 @@ npm run build
 npm run test:e2e
 ```
 
-Tarayıcı testleri Playwright Chromium kullanır. Tarayıcı kurulu değilse `npx playwright install chromium` çalıştırın. Mevcut Chromium tabanlı bir tarayıcı için `PLAYWRIGHT_CHROMIUM_EXECUTABLE` tam dosya yoluyla ayarlanabilir.
+Tarayıcı testleri macOS’ta kurulu Chrome’u, diğer ortamlarda Playwright Chromium’u kullanır. Tarayıcı kurulu değilse `npx playwright install chromium` çalıştırın. Başka bir Chromium tabanlı tarayıcı için `PLAYWRIGHT_CHROMIUM_EXECUTABLE` tam dosya yoluyla ayarlanabilir.
 
 ## Mimari
 

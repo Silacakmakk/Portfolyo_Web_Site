@@ -4,7 +4,9 @@ Son güncelleme: 12 Kasım 2026 · Europe/Istanbul
 
 ## Mevcut durum
 
-Gümüş ve pembe yansımalı tasarım React ve TypeScript uygulamasına aktarıldı. CV içerikleri yerleştirildi; numaralı menü, bölüm bağlantıları, yatay kaydırma ve akışkan arka plan çalışıyor. Üç birim testi ve masaüstü/mobil boyutlarında 14 tarayıcı kontrolü geçti. Özel erişimli yayın hazırlığı sürüyor; son kullanıcı tasarım ve içerik değerlendirmesi açık.
+Gümüş ve pembe yansımalı tasarım React ve TypeScript uygulamasına aktarıldı. CV içerikleri yerleştirildi; numaralı menü, bölüm bağlantıları, yatay kaydırma ve akışkan arka plan çalışıyor. Üç birim testi ve masaüstü/mobil boyutlarında 16 tarayıcı kontrolü geçti. Özel erişimli site yayımlandı ve canlı adreste üç ekran genişliğinde doğrulandı. Son kullanıcı tasarım ve içerik değerlendirmesi açık.
+
+Canlı site: [Sıla Çakmak portfolyo](https://sila-cakmak-portfolio.burayrailway.chatgpt.site). Erişim özel; ziyaret için site sahibinin hesabıyla oturum gerekebilir.
 
 | Alan | Durum | Açıklama |
 | --- | --- | --- |
@@ -14,8 +16,8 @@ Gümüş ve pembe yansımalı tasarım React ve TypeScript uygulamasına aktarı
 | Akışkan arayüz prototipi | Hazır | Fareye tepki veren dalgalar, bölüm geçişleri ve örnek içerikler mevcut. |
 | Teknoloji ve mimari | Başlangıç kararı hazır | Aşağıdaki yapı geliştirme sırasında gerekçesi kaydedilerek iyileştirilebilir. |
 | Kalıcı uygulama | Uygulandı | React, TypeScript, Vite, Three.js ve GSAP; yerel fontlar ve bağımsız içerik katmanı. |
-| CV ve gerçek içerik | Kontrole hazır | Beş bölüm CV ile dolduruldu; üç proje deposu doğrulandı. Gerçek proje görselleri ve nihai makale bağlantısı eklenebilir. |
-| Yayın | Devam ediyor | Sites üzerinde özel erişimli proje oluşturuldu; üretim paketi hazırlanıyor. |
+| CV ve gerçek içerik | Kontrole hazır | Beş bölüm CV ile dolduruldu; üç proje deposu doğrulandı. Makale bağlantısı DergiPark üzerinden doğrulandı ve eklendi; gerçek proje görselleri eklenebilir. |
+| Yayın | Tamamlandı | Sites özel erişimli yayın başarılı; 1440, 390 ve 320 px genişliklerinde canlı kontroller geçti. |
 
 ## Tasarım kararları
 
@@ -83,12 +85,12 @@ Bir iş yalnızca kendi kabul ölçütü karşılanıp doğrulama kaydı eklendi
 | GEL-04 | Numaralı gezinmeyi geliştirmek | Tamamlandı | Tıklama, yatay kaydırma ve klavye aynı aktif bölümü güncelliyor; dikey kaydırma korunuyor. |
 | GEL-05 | Bölüm geçişlerini eşzamanlamak | Tamamlandı | İçerik ve menü göstergesi efektle birlikte değişiyor; hızlı seçimlerde son istek uygulanıyor. |
 | GEL-06 | Bölüm bağlantılarını eklemek | Tamamlandı | Doğrudan bölüm adresleri ve tarayıcı geri–ileri düğmeleri doğru çalışıyor. |
-| IC-01 | CV ve proje bilgilerini toplamak | Kısmen tamamlandı | CV okundu; proje açıklamaları ve üç depo bağlantısı doğrulandı. Gerçek proje görselleri ve makale adresi bekliyor; mevcut görseller kavramsal. |
+| IC-01 | CV ve proje bilgilerini toplamak | Kısmen tamamlandı | CV okundu; proje açıklamaları ve üç depo bağlantısı doğrulandı. Makale adresi DergiPark üzerinden doğrulandı ve eklendi. Gerçek proje görselleri bekliyor; mevcut görseller kavramsal. |
 | IC-02 | Gerçek içerikleri yerleştirmek | Onay bekliyor | Yer tutucular kaldırıldı; son metinlerin kullanıcı kontrolü bekleniyor. |
 | KAL-01 | Mobil ve erişilebilirlik kontrolü | Tamamlandı | Masaüstü ve mobil emülasyonda gezinme, hizalama, dokunma, klavye, yerel diyalog ve hareket azaltma kontrolleri geçti. |
-| KAL-02 | Performans ve alternatif görünüm | Kısmen tamamlandı | Grafik katmanı ayrı yükleniyor; düşük kalite ve WebGL alternatifi çalışıyor. Fiziksel cihaz performans ölçümü açık. |
-| YAY-01 | Yayına hazırlamak ve yayımlamak | Devam ediyor | Başlıklar, PNG paylaşım görseli ve üretim paketi hazır; Sites özel erişimli yayın hazırlanıyor. |
-| YAY-02 | Canlı siteyi doğrulamak | Planlandı | Canlı adreste masaüstü, mobil, bölüm bağlantıları ve geri–ileri gezinmesi kontrol edildi. |
+| KAL-02 | Performans ve alternatif görünüm | Tamamlandı | Yerel Chrome’da masaüstü ve iki mobil emülasyon boyutu ölçüldü; hafif mod ve WebGL alternatifi doğrulandı. Fiziksel telefon ölçümü ek kontroldür. |
+| YAY-01 | Yayına hazırlamak ve yayımlamak | Tamamlandı | Başlıklar, PNG paylaşım görseli ve üretim paketi hazır; Sites özel erişimli yayın başarılı. |
+| YAY-02 | Canlı siteyi doğrulamak | Tamamlandı | Canlı adreste üç boyutta beş bölüm, hizalama, geri gezinme ve grafik başlatma kontrol edildi; 0 çalışma zamanı hatası. |
 
 ## Doğrulama kaydı
 
@@ -100,9 +102,12 @@ Bir iş yalnızca kendi kabul ölçütü karşılanıp doğrulama kaydı eklendi
 | 12 Kasım 2026 | Proje klasörü | Mevcut dosyalar incelendi. | Uygulama kaynakları ve paket yapılandırması henüz yok. |
 | 12 Kasım 2026 | React uygulaması | Tip kontrolü ve üretim derlemesi. | Geçti. Ana JS yaklaşık 105 KB gzip; grafik katmanı ayrı yüklenir ve yaklaşık 119 KB gzip. |
 | 12 Kasım 2026 | Gezinme modeli | Üç birim testi. | Bölüm bağlantıları, sınırlar ve eski geçiş isteğinin reddi geçti. |
-| 12 Kasım 2026 | Tarayıcı | Chrome; 1440×1000 masaüstü ve 390×664 mobil emülasyon; 14 kontrol. | Tamamı geçti. Gerçek shader başlatma, konsol hataları, taşma, menü hizası, geri–ileri, hızlı seçim, klavye, dikey kaydırma, yatay dokunma, hareket azaltma ve WebGL kaybı test edildi. Fiziksel telefon testi değildir. |
+| 12 Kasım 2026 | Tarayıcı | Chrome; 1440×1000 masaüstü ve 390×664 mobil emülasyon; 16 kontrol. | Tamamı geçti. Gerçek shader başlatma, konsol hataları, taşma, menü hizası, geri–ileri, hızlı seçim, klavye, dikey kaydırma, yatay dokunma, hareket azaltma ve WebGL kaybı test edildi. Fiziksel telefon testi değildir. |
 | 12 Kasım 2026 | Güvenlik bağımlılık kontrolü | Test araçları güncellendi; npm kilit dosyası denetlendi. | 0 bilinen açık. |
 | 12 Kasım 2026 | Görsel inceleme | Masaüstü Hakkımda ve Projeler, mobil Hakkımda ekran görüntüleri. | İncelendi; metinler ve numaralı menü sınırlar içinde. Kanıtlar `output/screenshots/` altında, Git dışında. |
+| 12 Kasım 2026 | Yayın | Sites dağıtımı `appgdep_6af5b1da61788191b602659287f1f6d6`. | Başarılı; özel erişim korunuyor. |
+| 12 Kasım 2026 | Canlı kontroller | 1440×1000, 390×844 ve 320×740 Chrome; her boyutta beş bölüm, ortalı menü, taşma ve geri gezinme. | 15 bölüm kontrolü geçti; 0 çalışma zamanı hatası. `output/live-verification.json` ve `output/live-*.png`. |
+| 12 Kasım 2026 | Çizim ölçümü | Her boyutta 30 gerçek WebGL çizim çağrısı; başlatma sonrası örneklem. | Ortalama / p95 aralıkları: masaüstü 16,5 / 17,6 ms; mobil 32,8 / 33,6 ms; 320 px 33,2 / 33,5 ms. Yerel Mac Chrome, mobil emülasyon; fiziksel telefon ölçümü değildir. |
 
 ## Açık kontroller
 
@@ -119,12 +124,11 @@ Bir iş yalnızca kendi kabul ölçütü karşılanıp doğrulama kaydı eklendi
 
 ## Sıradaki çalışma
 
-1. Özel erişimli yayını tamamlamak ve canlı adresi kontrol etmek — YAY-01, YAY-02.
-2. Son tasarım ve içerikleri kullanıcıyla değerlendirmek — TAS-03, IC-02.
-3. Makale bağlantısı ve gerçek proje görsellerini eklemek — IC-01.
-4. Fiziksel cihaz performans ölçümünü tamamlamak — KAL-02.
+1. Son tasarım ve içerikleri kullanıcıyla değerlendirmek — TAS-03, IC-02.
+2. Makale bağlantısı ve gerçek proje görsellerini eklemek — IC-01.
+3. Ek doğrulama: kullanıcının fiziksel telefonunda gezinme ve akıcılığı değerlendirmek.
 
-Kullanıcı değerlendirmesi veya fiziksel cihaz ölçümü yapılmadan bu maddeler tamamlandı olarak işaretlenmeyecek.
+Kullanıcı değerlendirmesi yapılmadan TAS-03 ve IC-02 tamamlandı olarak işaretlenmeyecek. Fiziksel telefon kontrolü, tamamlanan emülasyon kontrollerinden ayrı tutulacak.
 
 ## Güncelleme yöntemi
 
@@ -142,3 +146,4 @@ Kullanıcı değerlendirmesi veya fiziksel cihaz ölçümü yapılmadan bu madde
 | 12 Kasım 2026 | Güncel tasarım, mimari, işler ve doğrulama durumu ilk kez kaydedildi. | Çalışmanın ilerleyişini tek yerden takip etmek. |
 | 12 Kasım 2026 | Uygulama kuruldu; CV aktarıldı; gerçek proje depoları eklendi; testler kaydedildi. | Audit tamamlama hedefi doğrultusunda kalıcı uygulamaya geçiş. |
 | 12 Kasım 2026 | Grafik kodu gecikmeli yüklenir; React StrictMode yeniden başlatmasında GPU bağlamının gereksiz kaybı düzeltildi. | İlk yükü azaltmak ve akışkan yüzeyin güvenilir başlamasını sağlamak. |
+| 12 Kasım 2026 | Özel erişimli yayın ve canlı kontroller tamamlandı. | Uygulamanın yerel ortam dışında da çalıştığını doğrulamak. |
