@@ -9,7 +9,7 @@ import '@fontsource/inter/latin-ext-400.css'
 import './styles/global.css'
 import { NavigationProvider } from './app/NavigationContext'
 import { App } from './app/App'
-
+//açıklama
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode><NavigationProvider><App /></NavigationProvider></React.StrictMode>,
 )
