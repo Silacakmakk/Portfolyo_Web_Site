@@ -14,7 +14,7 @@ export function SectionContent({ index }: { index: number }) {
     <span className={styles.personal}>Ekranın dışında: kitaplar, doğa yürüyüşleri ve yeni deneyimler.</span>
   </div>
   if (index === 1) return <div className={styles.experiences}>{experiences.map((item, i) => <article className={styles.experience} key={item.organization}>
-    <div className={styles.rowLabel}><span>0{i + 1}</span><time>{item.date}</time></div><h2>{item.role}</h2><p className={styles.organization}>{item.organization}</p><ul>{item.points.map(point => <li key={point}>{point}</li>)}</ul>
+    <div className={styles.rowLabel}><span>0{i + 1}</span><time>{item.date}</time></div><h2>{item.role}</h2><p className={styles.organization}>{item.organization}</p>{item.points.length > 0 && <ul>{item.points.map(point => <li key={point}>{point}</li>)}</ul>}
   </article>)}</div>
   if (index === 2) return <div className={styles.education}>
     <article><span className={styles.kicker}>EYLÜL 2021 — HAZİRAN 2026</span><h2>Bilgisayar Mühendisliği</h2><p>Kütahya Dumlupınar Üniversitesi</p><div className={styles.degree}><strong>3,92 <small>/ 4,00</small></strong><span>Fakülte birincisi</span></div></article>

@@ -1,6 +1,6 @@
 # Portfolyo projesi audit ve ilerleme takibi
 
-Son güncelleme: 12 Kasım 2026 · Europe/Istanbul
+Son güncelleme: 13 Kasım 2026 · Europe/Istanbul
 
 ## Mevcut durum
 
@@ -155,3 +155,4 @@ Kullanıcı değerlendirmesi yapılmadan TAS-03 ve IC-02 tamamlandı olarak işa
 
 | 12 Kasım 2026 | Makale bağlantısı ve ikinci özel yayın eklendi; canlı font ve bağlantı kontrolleri yapıldı. | Yeni kaynak bilgisini doğrulamak ve audit kayıtlarını yayınla eşleştirmek. |
 | 12 Kasım 2026 | Kullanıcı tasarımda düzenlemek istediği alanlar olduğunu belirtti; revizyon ayrıntıları istendi. | Son değerlendirme tamamlanmadığından TAS-03 ve IC-02 açık kalır. |
+| 13 Kasım 2026 | Deneyim listesinin başına Buray Demiryolu İnşaat A.Ş. / Junior Yazılım Geliştiricisi eklendi; 9 Kasım 2026 — Devam ediyor. | Kullanıcının yeni iş bilgisi; paylaşılmayan görevler eklenmedi. |
