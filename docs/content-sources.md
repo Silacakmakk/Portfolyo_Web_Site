@@ -14,4 +14,4 @@ Kullanıcının sağladığı [oyun bağımlılığı makalesi](https://dergipar
 
 Proje görselleri, CSS ile oluşturulmuş kavramsal desenlerdir. Ham CV ve telefon numarası yayın dosyalarına dahil değildir.
 
-13 Kasım 2026 kullanıcı güncellemesi: Buray Demiryolu İnşaat A.Ş. bünyesinde Junior Yazılım Geliştiricisi; başlangıç 9 Kasım 2026, halen devam ediyor. Görev ayrıntıları paylaşılmadığından eklenmedi.
+13 Kasım 2026 kullanıcı güncellemesi: Buray Demiryolu İnşaat A.Ş. bünyesinde Junior Yazılım Geliştiricisi; başlangıç 9 Kasım 2026, halen devam ediyor. Kullanıcının web projeleri, yazılım geliştirme ve şirket içi koordinasyon açıklaması genel bir görev metni olarak eklendi.

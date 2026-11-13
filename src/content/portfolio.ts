@@ -18,7 +18,7 @@ export const profile = {
 }
 
 export const experiences = [
-  { role: 'Junior Yazılım Geliştiricisi', organization: 'Buray Demiryolu İnşaat A.Ş.', date: '9 Kasım 2026 — Devam ediyor', points: [] },
+  { role: 'Junior Yazılım Geliştiricisi', organization: 'Buray Demiryolu İnşaat A.Ş.', date: '9 Kasım 2026 — Devam ediyor', points: ['Şirket içi ihtiyaçlara yönelik web projelerinin ve yazılım çözümlerinin geliştirilmesinde, ilgili ekiplerle koordinasyon içinde çalışıyorum.'] },
   { role: 'Bilgi Teknolojileri Stajyeri', organization: 'ÇİMKO Çimento ve Beton Sanayi A.Ş.', date: 'Temmuz — Ağustos 2026', points: ['20 iş günlük stajda kurumsal ağ ve sistem yönetimi süreçlerini destekledim.', 'Cisco switch, FortiGate, VLAN, DHCP ve FortiAP ile ağ testleri gerçekleştirdim; IP kamera entegrasyonu ve temel Active Directory sorunlarının çözümünde görev aldım.'] },
   { role: 'Takım Kaptanı', organization: 'Fikrine Sahip Çık Hackathon', date: 'Nisan — Mayıs 2026', points: ['Elektrikli araç bataryalarına yönelik fikirle 40 takım arasından finale kalan 10 takımdan biri olduk.', 'Finalde, taburculuk sonrası hasta takibine yönelik çözümü 12 saatte geliştirerek 6. sırayı elde ettik.', 'Problem analizi, çözüm gereksinimleri ve patent başvuru kurallarına uygun teknik dokümantasyon süreçlerini koordine ettim.'] },
   { role: 'İŞKUR Gençlik Programı Öğrencisi', organization: 'Kütahya Dumlupınar Üniversitesi · Sağlık, Kültür ve Spor Daire Başkanlığı', date: 'Ocak — Haziran 2026', points: ['Veri girişi, belge düzenleme ve dosya takibi süreçlerini yürüttüm.', 'Word ve Excel desteği; bilgisayar güncelleme, formatlama ve temel sorun giderme işlemleri gerçekleştirdim.'] },
